@@ -74,25 +74,25 @@ module.exports = script = async (client, m, chatUpdate, store) => {
         case "help":
         case "menu":
           m.reply(`*Whatsapp Bot OpenAI*
-            🔊Sr. Jason by Professor
-          📌Comandos 
+            ðŸ”ŠSr. Jason by Professor
+          ðŸ“ŒComandos 
           1. /ai
           2. /img 
 *(ZEUSGPT)*
 Cmd: ${prefix}ai 
-🔎Para pesquisar qualquer coisa.
-✅Juntar https://t.me/zeusgpt \n
-✅inscreva-se - https://youtu.be/
-✅JOIN - https://chat.whatsapp.com/C4RX8lyqnpW9simIibpFKx \n
-✅Telegram - https://t.me/+BCmNvg9aPOMzMDZh
-⚠NOTA - Para usar o Bot, certifique-se de ter entrado em todos os grupos acima\n caso contr�rio, ele sair� do chat!!
+ðŸ”ŽPara pesquisar qualquer coisa.
+âœ…Juntar https://t.me/zeusgpt \n
+âœ…inscreva-se - https://youtu.be/
+âœ…JOIN - https://chat.whatsapp.com/C4RX8lyqnpW9simIibpFKx \n
+âœ…Telegram - https://t.me/+BCmNvg9aPOMzMDZh
+âš NOTA - Para usar o Bot, certifique-se de ter entrado em todos os grupos acima\n caso contrário, ele sairá do chat!!
 *(DALL-E)*
 Cmd: ${prefix}img
 para gerar imagem ai`)
           break;
         case "ai": case "openai": 
           try {
-            if (setting.keyopenai === "ISI_APIKEY_OPENAI_DISINI") return reply("Apikey n�o foi preenchido\n\nPor favor, preencha o apikey primeiro no arquivo de chave.json\n\nApikey pode ser feito em website: https://beta.openai.com/account/api-keys");
+            if (setting.keyopenai === "ISI_APIKEY_OPENAI_DISINI") return reply("Apikey não foi preenchido\n\nPor favor, preencha o apikey primeiro no arquivo de chave.json\n\nApikey pode ser feito em website: https://beta.openai.com/account/api-keys");
             if (!text) return reply(`Conversar com AI.\n\nExemplo:\n${prefix}${command} Sua pergunta`);
             const configuration = new Configuration({
               apiKey: setting.keyopenai,
@@ -116,7 +116,7 @@ para gerar imagem ai`)
           break;
         case "img": case "ai-img": case "image": case "images":
           try {
-            if (setting.keyopenai === "ISI_APIKEY_OPENAI_DISINI") return reply("Apikey n�o foi preenchido\n\nPor favor, preencha o apikey primeiro no arquivo de chave.json\n\nApikey pode ser feito em website: https://beta.openai.com/account/api-keys");
+            if (setting.keyopenai === "ISI_APIKEY_OPENAI_DISINI") return reply("Apikey não foi preenchido\n\nPor favor, preencha o apikey primeiro no arquivo de chave.json\n\nApikey pode ser feito em website: https://beta.openai.com/account/api-keys");
             if (!text) return reply(`Criar imagem com Daale AI.\n\nExemplo:\n${prefix}${command} Casa de madeira na montanha de neve`);
             const configuration = new Configuration({
               apiKey: setting.keyopenai,
